@@ -10,7 +10,7 @@ export const routes: Routes = [
     component: HomeTemplateComponent,
     children: [
       { path: '', component: InitialContentComponent },
-      { path: 'last', component: ContentComponent },
+      { path: '/last', component: ContentComponent },
     ],
   },
 ];
