@@ -6,11 +6,11 @@ import { ContentComponent } from './pages/content/content.component';
 
 export const routes: Routes = [
   {
-    path: '',
+    path: '/',
     component: HomeTemplateComponent,
     children: [
       { path: '', component: InitialContentComponent },
-      { path: '/last', component: ContentComponent },
+      { path: 'last', component: ContentComponent },
     ],
   },
 ];
