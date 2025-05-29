@@ -10,7 +10,6 @@ import { DOCUMENT } from '@angular/common'; // Usamos @angular/common
   imports: [RouterOutlet],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
-  providers: [{ provide: APP_BASE_HREF, useValue: environment.basePath }], // Usa el valor desde environment.basePath
 })
 export class AppComponent {
   constructor(@Inject(DOCUMENT) private document: Document) {}
