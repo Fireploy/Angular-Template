@@ -11,6 +11,6 @@ export class InitialContentComponent {
   constructor(private router: Router) {}
 
   navigateToLast(): void {
-    this.router.navigate(['/last'], {relativeTo: this.route});
+    this.router.navigate(['/last'], {relativeTo: this.router});
   }
 }
