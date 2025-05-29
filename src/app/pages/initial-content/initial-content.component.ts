@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-initial-content',
@@ -8,9 +8,9 @@ import { Router } from '@angular/router';
 })
 export class InitialContentComponent {
 
-  constructor(private router: Router) {}
+  constructor(private router: Router,  private route: ActivatedRoute) {}
 
   navigateToLast(): void {
-    this.router.navigate(['/last'], {relativeTo: this.router});
+    this.router.navigate(['/last'], {relativeTo: this.route});
   }
 }
